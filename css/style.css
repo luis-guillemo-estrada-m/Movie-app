@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+
+body {
+    background-color:#393e46;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+header {
+   
+    display: flex;       
+    justify-content: center;
+    text-align: center; 
+    padding: 1rem;
+    border-solid: 30px;
+    /* padding-top: 4rem; */
+    
+   
+}
+.navbar {
+    position:fixed;
+    top: 0; 
+    right: 0; 
+    left:0;
+    z-index: 10;
+}
+
+
+.search {
+    
+    outline: 2px solid #fff;
+    background-color: transparent;
+    border: 2px solid #22254b;
+    border-radius: 50px;
+    color: #fff;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.1rem 1rem;
+    text-align: center;
+    
+    
+}
+
+.search::placeholder {
+    color: #fff;   
+    padding-top: 10rem;
+}
+
+.search:focus {
+    background-color: #22254b;
+    
+}
+
+main {
+    padding-top: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center; 
+}
+
+.movie {
+    background-color: #373b69;
+    border-radius: 25px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    margin: 0.5rem;
+    width: 25%;
+  
+}
+
+.movie img {
+    width: 100%;
+
+}
+
+.movie-info h5{
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+
+}
+.movie-info {
+    color: #eee;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.5px;
+   
+}
+
+
+.movie-info span {
+    background-color: #22254b;
+    border-radius: 3px;
+    font-weight: bold;
+
+}
+.movie-info span.green {
+    color: rgb(39, 189, 39);
+   
+}
+
+.movie-info span.orange {
+    color: orange;
+}
+
+.movie-info span.red {
+    color: rgb(189, 42, 42);
+}
+
+.overview {
+    background-color: #fff;
+    padding: 2rem;
+    position: absolute;
+    max-height: 50%;
+    overflow: auto;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateY(101%);
+    transition: transform 0.4s ease-in;
+}
+
+
+.movie:hover .overview {
+    transform: translateY(0);
+}
